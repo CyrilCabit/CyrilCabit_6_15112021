@@ -9,7 +9,7 @@ const path = require('path');
 require ('./dbConfig');
 
 //ROUTES POUR SAUCES ET USERS
-const sauceRoutes = require("./routes/stuff");
+const sauceRoutes = require("./routes/sauce");
 const userRoutes = require('./routes/user');
 
 
@@ -22,8 +22,9 @@ app.use((req, res, next) => {
 });
 
 app.use('/images', express.static(path.join(__dirname, 'images')));
-app.use('/api/sauces', sauceRoutes);
 app.use('/api/auth', userRoutes);
+app.use('/api/sauces', sauceRoutes);
+
   
 
 
