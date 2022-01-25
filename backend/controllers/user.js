@@ -2,7 +2,7 @@ const bcrypt = require ('bcrypt');
 const jwt = require ('jsonwebtoken');
 
 const User = require('../models/User');
-
+require('dotenv').config()
 
 
 //CREATION NEW USER
@@ -37,7 +37,7 @@ User.findOne({ email: req.body.email })
             userId: user._id,
             token: jwt.sign(
                 {userId: user._id},
-                'RANDOM_TOKEN_SECRET',
+                process.env.TOKEN_USER,
                 {expiresIn:'24h'}
             )
         });

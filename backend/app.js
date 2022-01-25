@@ -8,6 +8,8 @@ const path = require('path');
 //IMPORT DU FICHIER RELATIF A LA BASE DE DONNEES
 require ('./dbConfig');
 
+require('dotenv').config();
+
 //ROUTES POUR SAUCES ET USERS
 const sauceRoutes = require("./routes/sauce");
 const userRoutes = require('./routes/user');
