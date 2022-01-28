@@ -1,4 +1,3 @@
-# CyrilCabit_6_15112021
 ## Construire une API - P6 OPENCLASSROOMS
 
 ## Pour connecter le serveur:
