@@ -7,7 +7,7 @@
 
 Ceci lancera la connexion au serveur sur le port 8081 et se connectera à la base de données MONGODB
 
-##Pour lancer l'application front-end, tapez dans le terminal les commandes "NPM START" à partir du dossier "FRONTEND/Web-Developer-P6"
+## Pour lancer l'application front-end, tapez dans le terminal les commandes "NPM START" à partir du dossier "FRONTEND/Web-Developer-P6"
 
 
 
