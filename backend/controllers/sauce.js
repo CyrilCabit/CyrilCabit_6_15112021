@@ -83,7 +83,7 @@ exports.modifySauce = (req, res, next) => {
     }
   ).catch(
     (error) => {
-      res.status(400).json({
+      res.status(403).json({
         error: error
       });
     }
